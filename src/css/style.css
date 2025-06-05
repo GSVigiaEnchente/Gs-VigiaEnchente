@@ -1,65 +1,76 @@
-    :root {
-      --primary-gradient: linear-gradient(135deg, #1e90ff, #00bfff);
-      --secondary-gradient: linear-gradient(135deg, #79a5ae, #0a9396);
-      --background-color: #1b5a84;
-      --text-color: #073763;
-      --accent-color: #0077b6;
-      --safe-color: #2a9d8f;
-      --warning-color: #e76f51;
-      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      background: var(--background-color);
-      color: var(--text-color);
-      font-family: var(--font-family);
-      line-height: 1.6;
-    }
-    header {
-      background: var(--primary-gradient);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      letter-spacing: 3px;
-      margin-bottom: 1rem;
-      border-bottom: 3px solid var(--accent-color);
-      padding-bottom: 0.2rem;
-      letter-spacing: 1.2px;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    li {
-      margin-bottom: 0.6rem;
-      font-size: 1rem;
-    }
-    .tips li {
-      margin-bottom: 1rem;
-    }
-    footer {
-      background: var(--secondary-gradient);
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      letter-spacing: 1.2px;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      main {
-        margin: 1rem;
-      }
-      section {
-        padding: 1.2rem 1.2rem;
-      }
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bellota Text', cursive;
+}
+
+body {
+    background: #f0f0f0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+.restaurant-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #a30000;
+    font-weight: 700;
+}
+
+header nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.banner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;  
+    overflow: hidden;
+}
+
+.banner #image {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+    display: block;
+}
