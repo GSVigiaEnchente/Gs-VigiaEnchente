@@ -32,9 +32,9 @@ header {
 
 .logo {
     height: 60px;
-    width: auto;
+    width: 80px;
 }
-.restaurant-name {
+.vigia-enchente {
     font-size: 1.8rem;
     font-weight: 700;
     color: #000000;
@@ -50,9 +50,14 @@ header nav ul {
 }
 
 header nav ul li a {
-    text-decoration: none;
-    color: #a30000;
+    list-style: none;
+    display: flex;
+    gap: 20px;
     font-weight: 700;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    color: #a30000;
+
 }
 
 header nav ul li a:hover {
