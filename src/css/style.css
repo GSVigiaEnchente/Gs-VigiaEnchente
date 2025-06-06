@@ -15,16 +15,14 @@ a:hover {
 }
 
 .logo{
-    height: 60px;
-    width: 80px;
+    height: 80px;
+    width: 90px;
 }
 
 header nav ul li a.streamlit-header {
     background-color: #a30000;
-    padding: 8px 16px;
+    padding: 4px 8px;
     border-radius: 6px;
-    font-weight: 700;
-    transition: background-color 0.3s ease;
 }
 
 header nav ul li a.streamlit-header:hover {
@@ -87,7 +85,7 @@ nav{
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 50vw;
+        width: 60vw;
         height: 92vh;
         background: rgb(14, 7, 95);
         flex-direction: column;
