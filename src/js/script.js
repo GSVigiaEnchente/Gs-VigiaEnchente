@@ -41,3 +41,24 @@ const mobileNavbar = new MobileNavbar(
 );
 
 mobileNavbar.init();
+
+let imagens =[
+    'src/assets/enchente1.jpg',
+    'src/assets/enchente2.jpg',
+    'src/assets/enchente3.png',  
+    'src/assets/enchente4.jpg',
+];
+
+let index =0;
+let tempo =3000;
+
+function slideShow(){
+
+    document.getElementById('image').src =imagens[index];
+    index++;
+    if(index ==imagens.length){
+        index=0;
+    }
+    setTimeout("slideShow()",tempo)
+}
+slideShow();
