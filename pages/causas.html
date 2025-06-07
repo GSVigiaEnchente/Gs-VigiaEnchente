@@ -1,60 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/style.css">
-    <title>Causas das enchentes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../src/css/colors.css" />
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <title>Causas das Enchentes</title>
 </head>
-<body class="body-sobre">
-    <header>
-        <nav>
-            <img src="../src/assets/logo.png" alt="logo-area" class="logo">
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/causas.html">Causas</a></li>
-                <li><a href="../pages/consequencias.html">Consequências</a></li>
-                <li><a href="https://gs-vigiaenchente.streamlit.app" target="_blank" class="streamlit-header">Kit de Emergência</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="Causas">
-            <h2>Causas Das Enchentes</h2>
-            <p>As enchentes no Brasil têm várias causas, que geralmente se combinam e agravam os impactos. Elas podem ser naturais, mas, em grande parte, estão ligadas à ação humana. Aqui estão as principais causas:</p>
-            <p> 1- Chuvas intensas: O Brasil, especialmente em épocas como o verão, recebe grandes volumes de chuvas em curto período. As chuvas torrenciais sobrecarregam rios, córregos e sistemas de drenagem.</p>
-            <p> 2- Urbanização desordenada: Construções em áreas de risco, como encostas ou margens de rios. Falta de planejamento urbano e ausência de infraestrutura adequada para escoamento da água.</p>
-            <p> 4- Acúmulo de lixo: O descarte inadequado de lixo entope bueiros, canais e redes de drenagem. Isso impede o escoamento da água da chuva e causa alagamentos rápidos.</p>
-            <p> 5- Desmatamento: A vegetação ajuda a reter a água e evitar a erosão. O desmatamento, inclusive nas áreas urbanas, reduz a capacidade natural de absorção da água pelo solo.</p>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div class="contato">
-                <h3>Contato</h3>
-                <p>Gmail: contato@email.com</p>
-                <p>Tel: (11) 2132-1231</p>
-            </div>
-            <div class="redesSociais">
-                <h3>Redes Sociais</h3>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                    </ul>
-            </div>
-        <div class="direitos">
-            <p>&copy; 2025. Todos os direitos reservados.</p>
-            <p>Termos e condições de uso</p>
-            <p>Privacidade</p>
-        </div>
+
+<body>
+  <header>
+    <nav>
+    <img src="../src/assets/logo.png" alt="Logotipo da campanha contra enchentes" class="logo" />
+    <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
     </div>
-    </footer>    
-        <script src="../src/js/script.js"></script>
+    <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/causas.html">Causas</a></li>
+        <li><a href="../pages/consequencias.html">Consequências</a></li>
+        <li><a href="https://gs-vigiaenchente.streamlit.app" target="_blank" class="streamlit-header">Kit de Emergência</a></li>
+    </ul>
+    <div class="theme-selector" aria-label="Seleção de tema">
+        <div class="theme-dot" data-theme="light" title="Claro"></div>
+        <div class="theme-dot" data-theme="dark" title="Escuro"></div>
+        <div class="theme-dot" data-theme="solarized" title="Solarizado"></div>
+    </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro-section">
+      <h2>Causas das Enchentes no Brasil</h2>
+      <p>
+        As enchentes são um problema recorrente em muitas regiões do Brasil e trazem consigo sérias consequências sociais, ambientais e econômicas. 
+        Compreender suas causas é o primeiro passo para prevenir desastres e proteger vidas.
+      </p>
+      <p>
+        Entre os principais fatores que contribuem para as enchentes estão:
+      </p>
+      <ul>
+        <li><strong>Chuvas intensas:</strong> Precipitações volumosas em um curto período sobrecarregam os sistemas de drenagem urbana.</li>
+        <li><strong>Urbanização desordenada:</strong> Construções em áreas de risco, sem planejamento, impedem o escoamento natural da água.</li>
+        <li><strong>Acúmulo de lixo:</strong> O descarte inadequado de resíduos sólidos entope bueiros e canais pluviais.</li>
+        <li><strong>Desmatamento:</strong> A retirada da vegetação reduz a capacidade do solo de absorver a água da chuva.</li>
+      </ul>
+      <p>
+        Este site tem como objetivo conscientizar sobre esses problemas e incentivar ações simples que podem evitar enchentes no futuro.
+      </p>
+    </section>
+
+    <section class="quiz-section">
+      <p class="quiz-text">
+        Quer testar seus conhecimentos sobre as causas das enchentes no Brasil? <br />
+        Responda a algumas perguntas rápidas e descubra como pequenos atos podem fazer uma grande diferença. <br />
+        Clique no botão abaixo para começar o quiz e se tornar um agente da mudança!
+      </p>
+      <button onclick="iniciarQuiz()" class="quiz-button">Iniciar Quiz</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contato">
+        <h3>Contato</h3>
+        <p>Email: contato@gmail.com</p>
+        <p>Tel: (11) 2132-1231</p>
+      </div>
+      <div class="redesSociais">
+        <h3>Redes sociais</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="direitos">
+        <h3>Direitos</h3>
+        <p>&copy; 2025. Todos os direitos reservados.</p>
+        <p><a href="#">Termos e condições de uso</a></p>
+        <p><a href="#">Política de privacidade</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
 </body>
 </html>

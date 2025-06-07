@@ -1,0 +1,25 @@
+:root {
+    --bg-color: rgb(14, 7, 95);
+    --text-color: #ffffff;
+    --primary-color: #007bff;
+    --btn-color: #a30000;
+    --btn-color-hover: #7f0000;
+}
+
+/* Tema escuro */
+.theme-dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #bb86fc;
+    --btn-color: #ff4444;
+    --btn-color-hover: #cc0000;
+}
+
+/* Tema solarizado */
+.theme-solarized {
+    --bg-color: #fdf6e3;
+    --text-color: #657b83;
+    --primary-color: #268bd2;
+    --btn-color: #b58900;
+    --btn-color-hover: #a57600;
+}

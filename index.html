@@ -1,58 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Vigia Enchente</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/colors.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <title>Vigia Enchente</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="src/assets/logo.png" alt="logo-area" class="logo">
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./pages/causas.html">Causas</a></li>
-                <li><a href="./pages/consequencias.html">Consequências</a></li>
-                <li><a href="https://gs-vigiaenchente.streamlit.app" target="_blank" class="streamlit-header">Kit de Emergência</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <img src="src/assets/logo.png" alt="Logo Vigia Enchente" class="logo" />
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./pages/causas.html">Causas</a></li>
+        <li><a href="./pages/consequencias.html">Consequências</a></li>
+        <li>
+          <a href="https://gs-vigiaenchente.streamlit.app" target="_blank" class="streamlit-header">
+            Kit de Emergência
+          </a>
+        </li>
+      </ul>
+      <div class="theme-selector" aria-label="Seleção de tema">
+        <div class="theme-dot" data-theme="light" title="Claro"></div>
+        <div class="theme-dot" data-theme="dark" title="Escuro"></div>
+        <div class="theme-dot" data-theme="solarized" title="Azul"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
     <section class="banner">
-        <img id="image" alt="Imagem">
+      <img id="image" src="src/assets/banner.jpg" alt="Imagem de enchente com cidade ao fundo" />
     </section>
-    <footer>
-        <div class="footer-content">
-            <div class="contato">
-                <ul>
-                    <h3>Contato</h3>
-                    <p>Email: contato@gmail.com</p>
-                    <p>tel:(11) 2132-1231</p>
-                </ul>
-            </div>
-            <div class="redesSociais">
-                <ul>
-                    <h3>Redes sociais</h3>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
-            </div>
-            <div class="direitos">
-                <ul>
-                    <h3>Direitos</h3>
-                    <p>&copy; 2025. Todos os direitos reservados.</p>
-                    <p>Termos e condições de uso</p>
-                    <p>Privacidade</p>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="src/js/script.js"></script>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contato">
+        <h3>Contato</h3>
+        <p>Email: contato@gmail.com</p>
+        <p>Tel: (11) 2132-1231</p>
+      </div>
+      <div class="redesSociais">
+        <h3>Redes Sociais</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="direitos">
+        <h3>Direitos</h3>
+        <p>&copy; 2025. Todos os direitos reservados.</p>
+        <p><a href="#">Termos e condições de uso</a></p>
+        <p><a href="#">Política de Privacidade</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/script.js"></script>
 </body>
 </html>
