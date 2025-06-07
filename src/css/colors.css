@@ -1,4 +1,5 @@
 :root {
+    --site-color: lightblue;
     --bg-color: rgb(14, 7, 95);
     --text-color: #ffffff;
     --primary-color: #007bff;
@@ -8,18 +9,20 @@
 
 /* Tema escuro */
 .theme-dark {
+    --site-color: gray;
     --bg-color: #121212;
     --text-color: #ffffff;
     --primary-color: #bb86fc;
-    --btn-color: #ff4444;
-    --btn-color-hover: #cc0000;
+    --btn-color: #a30000;
+    --btn-color-hover: #7f0000;
 }
 
 /* Tema solarizado */
 .theme-solarized {
-    --bg-color: #fdf6e3;
-    --text-color: #657b83;
-    --primary-color: #268bd2;
-    --btn-color: #b58900;
-    --btn-color-hover: #a57600;
+    --site-color: #fff;
+    --bg-color: #2a2a2a;   
+    --text-color: #e0e0e0;   
+    --primary-color: #4a4a4a;   
+    --btn-color: #a30000;
+    --btn-color-hover: #7f0000;
 }

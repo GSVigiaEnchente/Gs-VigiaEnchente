@@ -142,8 +142,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #000;
+    background-color: var(--site-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
 
@@ -168,14 +168,14 @@ main {
 .intro-section h2,
 .consequencias-section h2 {
     font-size: 28px;
-    color: #0d0353;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
 .intro-section p,
 .consequencias-section p {
     font-size: 17px;
-    color: #333;
+    color: var(--text-color);
     margin-bottom: 16px;
 }
 
@@ -198,7 +198,7 @@ main {
 .intro-section ul li::before,
 .consequencias-lista li::before {
     content: "✔";
-    color: #0d0353;
+    color: var(--text-color);
     position: absolute;
     left: 0;
     font-weight: bold;
@@ -217,12 +217,12 @@ main {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #0d0353;
+    color: var(--text-color);
 }
 
 button {
     background-color: #e60000; /* Vermelho chamativo */
-    color: #fff;
+    color: var(--text-color);
     border: none;
     padding: 12px 24px;
     font-size: 16px;
